@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin-top: 20%;
+}
+.cursor::after {
+    content: "|";
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+h1{
+    font-size: 2em;
+    color:  white;
+    text-align: center;
+}
+.Desconocido {
+   color: red !important;
+}
+button {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+#codigo {
+    display: none; /* Ocultar inicialmente */
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 20px auto;
+    width: fit-content;
+}
+pre {
+    background: white; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px; /* Espaciado interno uniforme */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Brillo uniforme */
+    margin: 50px auto; /* Margen uniforme alrededor */
+    max-width: 100%; /* Ancho máximo */
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+}
+.hljs{
+    border: none;
+    box-shadow: none;
+    padding: auto;
+    border-radius: none;
+    margin: auto;
+    max-width: none;
+}
+
