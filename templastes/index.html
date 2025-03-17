@@ -20,22 +20,24 @@
 <div clas = "code-container">
     <pre id="codigo" style="display: none;">
         <code class = "language-python">
-        from flask import Flask, render_template
+            from flask import Flask, render_template
 
-
-        app = Flask(_name_, template_folder='direcion de la carpeta de los templates') 
-
-        @app.route('/')
-        @app.route('/<nombre>')
-
-
-
-        def index(nombre= "Desconocido"):
-            es_desconocido = nombre == "Desconocido"
-            return render_template('index.html', nombre = nombre)
-
-        if _name_ == '_main_':
-            app.run(debug=True)
+            # profe aqui tiene que poner la ubicacion de la carpeta donde esta el archivo index.html
+            TEMPLATE_DIR = r"carpeta donde esta el archivo index.html"
+            
+            app = Flask(__name__, template_folder=TEMPLATE_DIR)
+            
+            @app.route('/')
+            @app.route('/<nombre>')
+            
+            
+            
+            def index(nombre= "Desconocido"):
+               es_desconocido = nombre == "Desconocido"
+               return render_template('index.html', nombre = nombre)
+            
+            if __name__ == '__main__':
+                app.run(debug=True)
         </code>
     </pre>
 </div>

@@ -1,3 +1,4 @@
+// Aqui solo ando muetrando el codigo de app.py y ando haciendo la animacion de escribir el nombre
 function mostrarCodigo() {
     let codigo = document.getElementById("codigo");
     let boton = document.querySelector("button");
